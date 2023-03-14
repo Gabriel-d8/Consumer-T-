@@ -26,6 +26,10 @@ public class Product {
 		this.price = price;
 	}
 
+	public static void priceUpedate(Product p) {
+		p.setPrice(p.getPrice() * 1.1);
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [" + name + ", " + String.format("%.2f", price) + "]";
