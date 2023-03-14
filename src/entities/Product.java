@@ -26,8 +26,12 @@ public class Product {
 		this.price = price;
 	}
 
-	public static void priceUpedate(Product p) {
+	public static void staticPriceUpdate(Product p) {
 		p.setPrice(p.getPrice() * 1.1);
+	}
+	
+	public void priceUpdate() {
+		price = price * 1.1;
 	}
 	
 	@Override
